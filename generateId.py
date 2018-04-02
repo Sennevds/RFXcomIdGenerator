@@ -20,6 +20,7 @@ TYPES = {'X10':         '00',
          'RGB TRC02':   '06',
          'Philips SBC': '07',
          'Energenie':   '08',
+         'Energenie5':  '09',
          'GDR2':        '0a',
          'ProMax':      '0f',
          'IT':          '0f' }
