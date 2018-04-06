@@ -20,6 +20,7 @@ TYPES = {'X10':         '00',
          'RGB TRC02':   '06',
          'Philips SBC': '07',
          'Energenie':   '08',
+         'Energenie5':  '09',
          'GDR2':        '0a',
          'ProMax':      '0f',
          'IT':          '0f' }
@@ -65,7 +66,7 @@ def generate_id(type, subType, args):
 
 
 def Lighting1(subType, args):
-    id = '710' + TYPES[subType] + '00' + HOUSECODES[args[0]] + '0' + args[1] + '00' + '00'
+    id = '0710' + TYPES[subType] + '00' + HOUSECODES[args[0]] + '0' + args[1] + '00' + '00'
     print (id)
 
 def Lighting2(subType, args):
