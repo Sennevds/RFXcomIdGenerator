@@ -92,11 +92,11 @@ def main(argv):
    try:
       opts, args = getopt.getopt(argv,"ht:s:p:",["type=","subtype=", "params="])
    except getopt.GetoptError:
-      print 'generateId.py -t <type> -s <subtype> -p <parameters>'
+      print ('generateId.py -t <type> -s <subtype> -p <parameters>')
       sys.exit(2)
    for opt, arg in opts:
       if opt == '-h':
-         print 'generateId.py -t <type> -s <subtype> -p <parameters>'
+         print ('generateId.py -t <type> -s <subtype> -p <parameters>')
          sys.exit()
       elif opt in ("-t", "--type"):
          type = arg
