@@ -65,8 +65,8 @@ def generate_id(type, subType, args):
         id = '0b15'
 
 
-def Lighting1(subType, args):
-    id = '0710' + TYPES[subType] + '00' + HOUSECODES[args[0]] + '0' + args[1] + '00' + '00'
+def Lighting1(subType, args):    
+    id = '0710' + TYPES[subType] + '00' + HOUSECODES[args[0]] + '0' + format(int(args[1]), 'x').upper() + '00' + '00'
     print (id)
 
 def Lighting2(subType, args):
